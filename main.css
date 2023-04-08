@@ -1,0 +1,98 @@
+* {
+    font-size: 17px;
+}
+body {
+    background-image: url("./img/white-cloud-blue-sky.jpg");
+    background-size: auto;
+    color: white;
+    font-family: "Arial";
+    font-weight: 100;
+}
+#city-input {
+    fill: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+button {
+    background: none;
+    background-size: cover;
+    border: none;
+    height: 30px;
+    width: 30px;
+}
+button img {
+    height: 30px;
+    width: 30px;
+}
+button img:hover{
+    cursor: pointer;
+}
+.wrapper {
+    width: 50%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-sizing: content-box;
+    box-shadow: 0px 0px 10px 1px white;
+    border-radius: 8px;
+    background-color: rgba(52,28,255,0.16);
+}
+.wrapper .search {
+    text-align: center;
+    background:none;
+    border: none;
+}
+.wrapper .search:focus{
+    outline: none;
+}
+.wrapper .widget {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper .widget .city, .weather, .cloud {
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    display: flex;
+    font-size: 50px;
+}
+.weather-item {
+    text-align: center;
+    font-size: 50px;
+
+}
+.weather-cloud {
+    text-align: center;}
+.city {
+    display: flex;
+    align-items: center;}
+.weather-day {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.weather-five-day {
+    display: flex;
+}
+
+
+@media (max-width: 1050px)  {
+    .weather-day {
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+    }
+    .weather-five-day {
+        flex-direction: column;
+    }
+}
